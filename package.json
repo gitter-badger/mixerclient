@@ -1,0 +1,32 @@
+{
+  "name": "mixerclient",
+  "version": "1.0.0",
+  "description": "Friendly Mixer streaming service API client",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc ./node_modules/.bin/mocha --reporter spec test/setup.js test/channel.js test/message.js test/user.js test/vote.js test/misc.js"
+  },
+  "author": "Connor McFarlane <connormcf@0x0.ltd> (https://connormcf.com)",
+  "license": "MIT",
+  "keywords": [
+    "mixer",
+    "stream",
+    "chat",
+    "beam-client",
+    "beam-client-node"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/connormcf/mixerclient.git"
+  },
+  "dependencies": {
+    "beam-client-node": "^0.13.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "grunt": "^1.0.1",
+    "grunt-jsdoc": "^2.1.0",
+    "mocha": "^3.5.0",
+    "nyc": "^11.1.0"
+  }
+}
