@@ -1,5 +1,6 @@
 # Mixer Client
 
+[![CircleCI](https://circleci.com/gh/ConnorMcF/mixerclient.svg?style=svg)](https://circleci.com/gh/ConnorMcF/mixerclient)
 Mixer Client is a friendly way to interact with the Mixer API.
 
 ### Installation
