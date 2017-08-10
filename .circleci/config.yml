@@ -27,7 +27,7 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
         
-      - run: npm test && nyc report --reporter=text-lcov | coveralls
+      - run: npm test && ./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls
 
       - store_test_results:
           path: "/tmp/test-results"
