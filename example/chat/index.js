@@ -1,5 +1,5 @@
 let Mixer = require('../../index')
-let mixer = new Mixer('MIXER_TOKEN_HERE')
+let mixer = new Mixer(process.env.MIXER_TOKEN || 'MIXER_TOKEN_HERE')
 
 mixer.on('ready', async () => {
 
