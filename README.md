@@ -1,4 +1,4 @@
-# Mixer Client [![CircleCI](https://circleci.com/gh/ConnorMcF/mixerclient.svg?style=svg)](https://circleci.com/gh/ConnorMcF/mixerclient) [![Coverage Status](https://coveralls.io/repos/github/ConnorMcF/mixerclient/badge.svg?branch=master)](https://coveralls.io/github/ConnorMcF/mixerclient?branch=master)
+# Mixer Client [![CircleCI](https://img.shields.io/circleci/project/github/ConnorMcF/mixerclient.svg)](https://circleci.com/gh/ConnorMcF/mixerclient) [![Coveralls](https://img.shields.io/coveralls/ConnorMcF/mixerclient.svg)](https://coveralls.io/github/ConnorMcF/mixerclient?branch=master)
 
 Mixer Client is a friendly way to interact with the Mixer API.
 
