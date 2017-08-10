@@ -15,6 +15,12 @@ let mixer = new Mixer('MIXER_TOKEN_HERE')
 
 # Methods
 
+### Constructor(token)
+Creates new Mixer client
+- `token` - `String` - Mixer OAuth token
+
+Returns `Mixer`
+
 ### .init()
 Fetches user auth info for joining channel then emits event `ready`.
 Returns `Promise`
