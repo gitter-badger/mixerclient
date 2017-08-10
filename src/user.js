@@ -1,5 +1,3 @@
-// const Message = require('./message')
-
 let User = function(data, channel) {
 	let self = this
 
@@ -15,13 +13,6 @@ let User = function(data, channel) {
 	self.channel = channel
 
 	self.whisper = async (msg) => {
-
-		const Message = require('./message')
-		// what is this doing down here?
-		// if it's at the top it'll get stuck in a require loop with message
-		// and you'll get `Uncaught TypeError: User is not a constructor`
-		// but hey i suppose this works too
-
 		return new Message(await self.channel.socket.call('whisper', [self.name, msg], self.channel))
 	}
 
@@ -36,3 +27,6 @@ let User = function(data, channel) {
 }
 
 module.exports = User
+
+const Message = require('./message')
+// Message is declared after exports to prevent a cyclic dependency issue
