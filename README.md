@@ -24,7 +24,9 @@ mixer.on('ready', async () => {
     })
 })
 ```
-Further documentation can be found in the docs directory.
+No token? Go to https://connormcf.com/mixeroauth/.
+
+Further documentation can be found in the [documentation directory](https://github.com/ConnorMcF/mixerclient/tree/master/docs) in the repo.
 
 License
 ----
