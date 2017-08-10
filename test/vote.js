@@ -10,7 +10,6 @@ describe('Poll', () => {
 		setTimeout(() => {
 			let i = 0
 			let countdown = 6000
-			let active = true
 
 			channel.startVote({
 				name: 'Poll test',
@@ -18,11 +17,9 @@ describe('Poll', () => {
 				duration: 5
 			})
 
-			channel.on('vote', vote => {
+			channel.once('vote', vote => {
 
 				channel.vote.on('update', () => {
-					if(!active) { return }
-
 					i++
 
 					channel.vote.remaining.should.be.below(countdown)
@@ -34,8 +31,6 @@ describe('Poll', () => {
 				})
 
 				channel.vote.on('done', () => {
-					if(!active) { return }
-
 					if(showRc) {
 						console.log('      Done on ' + i + ' at '+ countdown)
 					}
@@ -45,7 +40,6 @@ describe('Poll', () => {
 					channel.vote.responses['Yes'].should.eq(0)
 					channel.vote.responses['No'].should.eq(0)
 
-					active = false
 					done()
 				})
 
@@ -58,7 +52,6 @@ describe('Poll', () => {
 
 		let i = 0
 		let countdown = 6000
-		let active = true
 
 		channel.startVote({
 			name: 'Poll test',
@@ -66,13 +59,11 @@ describe('Poll', () => {
 			duration: 5
 		})
 
-		channel.on('vote', vote => {
+		channel.once('vote', vote => {
 
 			channel.vote.vote('No')
 
 			channel.vote.on('update', () => {
-				if(!active) { return }
-
 				i++
 
 				channel.vote.remaining.should.be.below(countdown)
@@ -84,8 +75,6 @@ describe('Poll', () => {
 			})
 
 			channel.vote.on('done', () => {
-				if(!active) { return }
-
 				if(showRc) {
 					console.log('      Done on ' + i + ' at '+ countdown)
 				}
@@ -95,7 +84,6 @@ describe('Poll', () => {
 				channel.vote.responses['Yes'].should.eq(0)
 				channel.vote.responses['No'].should.eq(1)
 				
-				active = false
 				done()
 			})
 
