@@ -1,6 +1,4 @@
-# Mixer Client [![CircleCI](https://img.shields.io/circleci/project/github/ConnorMcF/mixerclient.svg)](https://circleci.com/gh/ConnorMcF/mixerclient) [![Coveralls](https://img.shields.io/coveralls/ConnorMcF/mixerclient.svg)](https://coveralls.io/github/ConnorMcF/mixerclient?branch=master)
-
-[![Join the chat at https://gitter.im/ConnorMcF/mixerclient](https://badges.gitter.im/ConnorMcF/mixerclient.svg)](https://gitter.im/ConnorMcF/mixerclient?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# Mixer Client [![CircleCI](https://img.shields.io/circleci/project/github/ConnorMcF/mixerclient.svg)](https://circleci.com/gh/ConnorMcF/mixerclient) [![Coveralls](https://img.shields.io/coveralls/ConnorMcF/mixerclient.svg)](https://coveralls.io/github/ConnorMcF/mixerclient?branch=master) [![Join the chat at https://gitter.im/ConnorMcF/mixerclient](https://badges.gitter.im/ConnorMcF/mixerclient.svg)](https://gitter.im/ConnorMcF/mixerclient?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Mixer Client is a friendly way to interact with the Mixer API.
 
